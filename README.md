@@ -1,4 +1,4 @@
-**Vet_Clinic**
+**Vet Clinic**
 
 
 <!-- TABLE OF CONTENTS -->
@@ -26,42 +26,25 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Vet_Clinic <a name="about-project"></a>
+# 📖 Vet Clinic <a name="about-project"></a>
 
-**Vet_Clinic** is a database for a vet clinic.
+**Vet Clinic** is a database for a vet clinic. It consists of multiple tables with relations to one another.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+- PostgreSQL
+- SQL Shell
+- GitHub
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Tables with one-to-many relationships**
+- **Tables with many-to-many relationships**
+- **Queries to complex analytical questions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com) currently unavailable.
+- [Live Demo Link](https://yourdeployedapplicationlink.com) unavailable.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,9 +153,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Graphical User Interface**
+- [ ] **Add entry functionality**
+- [ ] **Remove entry functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
