@@ -51,3 +51,15 @@ SELECT COUNT(animals.name), species.name FROM animals JOIN species ON animals.sp
 SELECT name FROM animals JOIN owners ON animals.owner_id = owners.id WHERE species_id = 2 AND owner_id = 2;
 SELECT name FROM animals JOIN owners ON animals.owner_id = owners.id WHERE escape_attempts = 0;
 SELECT owners.full_name, COUNT(animals.name) AS animals_owned FROM owners JOIN animals ON owners.id = animals.owner_id GROUP BY full_name ORDER BY animals_owned DESC;
+
+/*add-join-tables*/
+
+SELECT animals.name from animals JOIN visits ON visits.animal_id = animals.id WHERE vet_id = 1 ORDER BY visits.date_of_visit DESC LIMIT 1;
+SELECT COUNT(DISTINCT animal_id) FROM visits WHERE vet_id = 3;
+SELECT v.name, s.species_id FROM vets v LEFT JOIN specializations s ON s.vet_id = v.id;
+SELECT a.name FROM animals a JOIN visits v ON v.animal_id = a.id WHERE v.vet_id = 3 AND v.date_of_visit BETWEEN '2020-04-01' AND '2020-08-30';
+SELECT a.name, COUNT(v.animal_id) FROM animals a JOIN visits v ON v.animal_id = a.id GROUP BY a.name ORDER BY COUNT(v.animal_id) DESC LIMIT 1;
+SELECT a.name, v.date_of_visit FROM animals a JOIN visits v ON v.animal_id = a.id WHERE v.vet_id = 2 ORDER BY v.date_of_visit ASC LIMIT 1;
+SELECT * FROM animals a JOIN visits v ON v.animal_id = a.id JOIN vets ON vets.id = v.vet_id ORDER BY v.date_of_visit DESC LIMIT 1;
+SELECT COUNT(vi.animal_id) FROM visits vi JOIN vets ve ON ve.id = vi.vet_id WHERE vet_id = 2;
+SELECT species.name, COUNT(animals.species_id) FROM animals JOIN visits ON animals.id = visits.animal_id JOIN vets ON vets.id = visits.vet_id JOIN species ON species.id = animals.species_id WHERE vets.name = 'Maisy Smith' GROUP BY species.name ORDER BY COUNT(animals.species_id) DESC LIMIT 1;
