@@ -1,4 +1,4 @@
-*Vet_Clinic*
+**Vet_Clinic**
 
 
 <!-- TABLE OF CONTENTS -->
